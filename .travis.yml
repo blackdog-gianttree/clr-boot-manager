@@ -1,6 +1,5 @@
 sudo: required
 dist: trusty
-arch: i686
 
 branches:
   only:
@@ -38,7 +37,7 @@ addons:
 
 
 before_install:
-  - uname -a
+  - ls -R ~
   - gem install coveralls-lcov
   - mkdir -p $HOME/prefix/bin
   - pip3 install --user meson==0.44.1
