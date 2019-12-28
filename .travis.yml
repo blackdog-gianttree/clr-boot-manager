@@ -1,6 +1,6 @@
 sudo: required
 dist: trusty
-arch: i386
+arch: i686
 
 branches:
   only:
