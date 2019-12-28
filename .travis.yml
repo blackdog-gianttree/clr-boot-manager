@@ -47,7 +47,7 @@ before_install:
 script:
     - lcov --version | grep "1.10"
     - export CC="gcc-5"
-    - ./scripts/travis_test.sh
+    - ./scripts/run-test-suite.sh
 
 after_success:
   - cd ${TRAVIS_BUILD_DIR}
